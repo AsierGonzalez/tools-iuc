@@ -27,6 +27,8 @@
     READ_NAME_REGEX=${ pipes.quote( str( $read_name_regex ) ) or "''" }
     OPTICAL_DUPLICATE_PIXEL_DISTANCE='${optical_duplicate_pixel_distance}'
 
+    MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=1000
+
     # Optional arguments
     #if $barcode_tag:
     BARCODE_TAG='${barcode_tag}'
